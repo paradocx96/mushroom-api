@@ -1,0 +1,6 @@
+pandas
+keras
+flask
+scikit-learn
+tensorflow
+Gunicorn

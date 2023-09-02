@@ -51,52 +51,29 @@ def input_data_maker(data):
             "waste": "w", "woods": "d"
         }
 
-        cap_shape = color_mapping.get(data.get("cap-shape"), "")
-        cap_surface = color_mapping.get(data.get("cap-surface"), "")
-        cap_color = color_mapping.get(data.get("cap-color"), "")
-        bruises = color_mapping.get(data.get("bruises"), "")
-        odor = color_mapping.get(data.get("odor"), "")
-        gill_attachment = color_mapping.get(data.get("gill-attachment"), "")
-        gill_spacing = color_mapping.get(data.get("gill-spacing"), "")
-        gill_size = color_mapping.get(data.get("gill-size"), "")
-        gill_color = color_mapping.get(data.get("gill-color"), "")
-        stalk_shape = color_mapping.get(data.get("stalk-shape"), "")
-        stalk_root = color_mapping.get(data.get("stalk-root"), "")
-        stalk_surface_above_ring = color_mapping.get(data.get("stalk-surface-above-ring"), "")
-        stalk_surface_below_ring = color_mapping.get(data.get("stalk-surface-below-ring"), "")
-        stalk_color_above_ring = color_mapping.get(data.get("stalk-color-above-ring"), "")
-        stalk_color_below_ring = color_mapping.get(data.get("stalk-color-below-ring"), "")
-        veil_type = color_mapping.get(data.get("veil-type"), "")
-        veil_color = color_mapping.get(data.get("veil-color"), "")
-        ring_number = color_mapping.get(data.get("ring-number"), "")
-        ring_type = color_mapping.get(data.get("ring-type"), "")
-        spore_print_color = color_mapping.get(data.get("spore-print-color"), "")
-        population = color_mapping.get(data.get("population"), "")
-        habitat = color_mapping.get(data.get("habitat"), "")
-
         json_data = {
-            "cap-shape": [cap_shape],
-            "cap-surface": [cap_surface],
-            "cap-color": [cap_color],
-            "bruises": [bruises],
-            "odor": [odor],
-            "gill-attachment": [gill_attachment],
-            "gill-spacing": [gill_spacing],
-            "gill-size": [gill_size],
-            "gill-color": [gill_color],
-            "stalk-shape": [stalk_shape],
-            "stalk-root": [stalk_root],
-            "stalk-surface-above-ring": [stalk_surface_above_ring],
-            "stalk-surface-below-ring": [stalk_surface_below_ring],
-            "stalk-color-above-ring": [stalk_color_above_ring],
-            "stalk-color-below-ring": [stalk_color_below_ring],
-            "veil-type": [veil_type],
-            "veil-color": [veil_color],
-            "ring-number": [ring_number],
-            "ring-type": [ring_type],
-            "spore-print-color": [spore_print_color],
-            "population": [population],
-            "habitat": [habitat]
+            "cap-shape": [color_mapping.get(data.get("cap-shape"), "unknown")],
+            "cap-surface": [color_mapping.get(data.get("cap-surface"), "unknown")],
+            "cap-color": [color_mapping.get(data.get("cap-color"), "unknown")],
+            "bruises": [color_mapping.get(data.get("bruises"), "unknown")],
+            "odor": [color_mapping.get(data.get("odor"), "unknown")],
+            "gill-attachment": [color_mapping.get(data.get("gill-attachment"), "unknown")],
+            "gill-spacing": [color_mapping.get(data.get("gill-spacing"), "unknown")],
+            "gill-size": [color_mapping.get(data.get("gill-size"), "unknown")],
+            "gill-color": [color_mapping.get(data.get("gill-color"), "unknown")],
+            "stalk-shape": [color_mapping.get(data.get("stalk-shape"), "unknown")],
+            "stalk-root": [color_mapping.get(data.get("stalk-root"), "unknown")],
+            "stalk-surface-above-ring": [color_mapping.get(data.get("stalk-surface-above-ring"), "unknown")],
+            "stalk-surface-below-ring": [color_mapping.get(data.get("stalk-surface-below-ring"), "unknown")],
+            "stalk-color-above-ring": [color_mapping.get(data.get("stalk-color-above-ring"), "unknown")],
+            "stalk-color-below-ring": [color_mapping.get(data.get("stalk-color-below-ring"), "unknown")],
+            "veil-type": [color_mapping.get(data.get("veil-type"), "unknown")],
+            "veil-color": [color_mapping.get(data.get("veil-color"), "unknown")],
+            "ring-number": [color_mapping.get(data.get("ring-number"), "unknown")],
+            "ring-type": [color_mapping.get(data.get("ring-type"), "unknown")],
+            "spore-print-color": [color_mapping.get(data.get("spore-print-color"), "unknown")],
+            "population": [color_mapping.get(data.get("population"), "unknown")],
+            "habitat": [color_mapping.get(data.get("habitat"), "unknown")]
         }
 
         return json_data
